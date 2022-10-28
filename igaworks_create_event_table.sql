@@ -1,8 +1,8 @@
 create database event_db;
 create table event_db.`order_log` (
-	`event_id`	varchar(255)	not null	unique 	primary key,
-	`order_id`	varchar(255)	not null,
-	`price`		float			not null,
+	`order_id`	varchar(255)	not null	unique	primary key,
+	`event_id`	varchar(255)	not null	unique,
+	`price`		float		not null,
 	`currency`	varchar(255)	not null
 );
 
